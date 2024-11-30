@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-blend-mode: multiply;
+  background-color: hsl(257, 40%, 49%, 1);
+
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-width: 380px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+header .logo {
+  height: 30px;
+  margin-left: 1rem;
+}
+
+.image-text-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text-button .image {
+  height: 200px;
+  margin-bottom: 3rem;
+}
+
+.text-button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.text-button h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text-button p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.text-button .btn {
+  color: hsl(257, 40%, 49%);
+  background: white;
+  border: none;
+  padding: 0.6rem 4rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+.text-button .btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.link {
+  display: flex;
+  gap: 20px;
+}
+
+.link a {
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.link a:hover {
+  border-color: hsl(300, 69%, 71%);
+}
+
+.link a:hover i {
+  color: hsl(300, 69%, 71%);
+
+}
+
+@media (min-width: 800px) {
+  body {
+    background: none;
+    background: url(images/bg-desktop.svg);
+    background-size: contain;
+  background-blend-mode: multiply;
+  background-color: hsl(257, 40%, 49%, 1);
+  background-repeat: no-repeat;
+  }
+
+  header {
+    max-width: 1050px;
+  }
+
+  header .logo {
+    height: 40px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  .image-text-button {
+    flex-direction: row;
+    align-items: start;
+  }
+  
+  .image-text-button .image {
+    height: 400px;
+    margin-right: 3rem;
+  }
+
+  .image-text-button .text-button {
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+
+  .text-button h1 {
+    width: 250px;
+  }
+
+  .text-button p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    width: 400px;
+    color: rgb(207, 207, 207);
+  }
+
+  .link {
+    align-self: flex-end;
+    max-width: 500px;
+  }
+
+  .text-button .btn {
+    padding: 0.9rem 4rem;
+  }
+}
